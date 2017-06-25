@@ -1,0 +1,62 @@
+<ion-content class="no-scroll" padding>
+    <form (ngSubmit)="logForm()">
+        <ion-item>
+            <ion-label id="score" fixed>Score: </ion-label>
+            <ion-input [disabled]="true" id="score" type="text" [(ngModel)]="hard.score" [ngModelOptions]="{standalone: true}" ></ion-input>
+            <ion-input [disabled]="true" id="time" type="text" [(ngModel)]="hard.time" [ngModelOptions]="{standalone: true}" ></ion-input>
+        </ion-item>
+    </form>
+    <ion-grid>
+            <ion-row>
+                <ng-container  *ngFor="let item of xmlItems; let i=index">
+                    <ion-col (click)='selectImg(item.id, item.refId, item.layerId)' width-25 *ngIf="i<3">
+                        <div id="{{item.layerId}}" class="layer">
+                            <img id="{{item.refId}}" class="kittens" src='https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_m.jpg' alt="{{item.title}}" width="100%">
+                        </div>
+                    </ion-col>
+                </ng-container>
+            </ion-row>
+        </ion-grid>
+        <ion-grid>
+            <ion-row>
+                <ng-container  *ngFor="let item of xmlItems; let i=index">
+                    <ion-col (click)='selectImg(item.id, item.refId, item.layerId)' width-25 *ngIf="i>2 && i<6">
+                        <div id="{{item.layerId}}" class="layer">
+                            <img id="{{item.refId}}" class="kittens" src='https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_m.jpg' alt="{{item.title}}" width="100%">
+                        </div>
+                    </ion-col>
+                </ng-container>
+            </ion-row>
+        </ion-grid>
+        <ion-grid>
+            <ion-row>
+                <ng-container  *ngFor="let item of xmlItems; let i=index">
+                    <ion-col (click)='selectImg(item.id, item.refId, item.layerId)' width-25 *ngIf="i>5 && i<9">
+                        <div id="{{item.layerId}}" class="layer">
+                            <img id="{{item.refId}}" class="kittens" src='https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_m.jpg' alt="{{item.title}}" width="100%">
+                        </div>
+                    </ion-col>
+                </ng-container>
+            </ion-row>
+        </ion-grid>
+        <ion-grid>
+            <ion-row>
+                <ng-container  *ngFor="let item of xmlItems; let i=index">
+                    <ion-col (click)='selectImg(item.id, item.refId, item.layerId)' width-25 *ngIf="i>8">
+                        <div id="{{item.layerId}}" class="layer">
+                            <img id="{{item.refId}}" class="kittens" src='https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_m.jpg' alt="{{item.title}}" width="100%">
+                        </div>
+                    </ion-col>
+                </ng-container>
+            </ion-row>
+        </ion-grid>
+    <ion-fab left bottom>
+            <button id="btn-menu" (click)="backToHome()" ion-button round icon-left>
+            <ion-icon name="home"></ion-icon>
+                Menu
+            </button>
+        </ion-fab>
+        <ion-fab right bottom>
+            <button id="btn-ready" (click)="hideElements()" ion-button round color="dark">Ready</button>
+    </ion-fab>
+</ion-content>

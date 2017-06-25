@@ -1,0 +1,65 @@
+$arcadeclassic-font-path: $font-path !default;
+
+.page-home {
+    background-color: #000;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 30%;
+}
+
+#con {
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 250%;
+    color: #EAEF9B;
+}
+
+#cen {
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 250%;
+    color: #24BABC;
+}
+
+#tra {
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 250%;
+    color: #4E3188;
+}
+
+#tion {
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 250%;
+    color: #22213D;
+}
+
+
+
+.btns {
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 180%;
+}
+
+#btn-trophy {
+    color: yellow;
+}
+
+.no-scroll .scroll-content{
+     overflow: hidden;
+}

@@ -1,0 +1,22 @@
+<ion-content class="page-home no-scroll" padding>
+  <div class="logo">
+    <p><span id="con">Con</span><span id="cen">cen</span><span id="tra">tra</span><span id="tion">tion</span></p>
+  </div>
+  <p>
+    <button class="btns" (click)="navEasy()" ion-button block large >EASY</button>
+  </p>
+  <p>
+    <button class="btns" (click)="navNormal()" ion-button block large color="secondary">NORMAL</button>
+  </p>
+  <p>
+    <button class="btns" (click)="navHard()" ion-button block large color="danger">HARD</button>
+  </p>
+  <p>
+    <ion-fab right bottom>
+      <button id="btn-trophy" class="btns" (click)="navTopScores()" ion-button round outline color="light">
+      <ion-icon name="trophy" ></ion-icon>
+      </button>
+    </ion-fab>
+    
+  </p>
+</ion-content>

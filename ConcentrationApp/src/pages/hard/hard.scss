@@ -1,0 +1,83 @@
+page-hard {
+    $arcadeclassic-font-path: $font-path !default;
+
+@font-face {
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+}
+
+// .content {
+//     width: 100%;
+// }
+
+#score {
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 180%;
+    color: #000;
+}
+
+#time {
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 180%;
+    color: #000;
+}
+
+.hidden-kittens {
+    visibility: hidden;
+}
+
+.new-layer {
+    background-color: #000;
+    height: 100%;
+}
+
+.no-scroll .scroll-content{
+     overflow: hidden;
+}
+
+#btn-ready{
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.btn-hide{
+    visibility: hidden;
+}
+
+#btn-menu{
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.btn-home {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.btns-hard {
+    position: absolute; 
+    bottom: 0px; 
+    width: 90%
+}
+
+.to-normalize {
+    margin-top: 42px;
+}
+
+.new-to-normalize {
+    margin-top: 0px;
+}
+}
+

@@ -1,0 +1,13 @@
+.page-topscore {
+    color: #fff;
+    background-color: #000;
+}
+
+.content-topscore {
+    text-align: center;
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 200%;
+}

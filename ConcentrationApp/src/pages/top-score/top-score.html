@@ -1,0 +1,25 @@
+<ion-content class="page-topscore" padding>
+    <div class="content-topscore">
+        <p>Top Score Easy:</p>
+        <ion-list>
+            <ion-item *ngFor="let item of easyItems; let i=index">
+                {{i+1}}<ion-icon name="trophy" ></ion-icon> Score: {{item.score}} | Time: {{item.time}}
+            </ion-item>
+        </ion-list>
+        <p>Top Score Normal:</p>
+        <ion-list>
+            <ion-item *ngFor="let item of normalItems; let i=index">
+                {{i+1}}<ion-icon name="trophy" ></ion-icon> Score: {{item.score}} | Time: {{item.time}}
+            </ion-item>
+        </ion-list>
+        <p>Top Score Hard:</p>
+        <ion-list>
+            <ion-item *ngFor="let item of hardItems; let i=index">
+                {{i+1}}<ion-icon name="trophy" ></ion-icon> Score: {{item.score}} | Time: {{item.time}}
+            </ion-item>
+        </ion-list>
+    </div>
+      <button class="btns" (click)="backToHome()" ion-button round color="light">
+      <ion-icon name="arrow-back" ></ion-icon>
+      </button>
+</ion-content>

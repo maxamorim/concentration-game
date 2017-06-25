@@ -1,0 +1,15 @@
+.page-resume {
+    color: #fff;
+    background-color: #000;
+}
+
+.modal {
+    margin-top: 50%;
+    margin-bottom: 50%;
+    text-align: center;
+    font-family: 'ArcadeClassic';
+    src: url('#{$arcadeclassic-font-path}/arcadeclassic.ttf') format("truetype");;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 200%;
+}
